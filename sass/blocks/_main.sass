@@ -1,0 +1,263 @@
+.main
+  background: url('../img/main/bg.jpg') no-repeat center
+  height: 1080px
+  position: relative
+  // .main__navbar
+  &__navbar
+    height: 70px
+    background-color: #fff
+    opacity: 0.95
+    &_dark-theme
+      background-color: $dark
+  // .main__logo-links-block
+  &__logo-links-block
+    position: absolute
+    left: 82px
+    bottom: 43px
+    width: 175px
+    display: flex
+    justify-content: space-between
+  // .main__logo-link-block
+  &__logo-link-block
+
+  // .main__logo-link
+  &__logo-link
+
+  // .main__logo-link-img
+  &__logo-link-img
+
+
+.navbar
+  // .navbar__container
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+  // .navbar__link-block
+  &__link-block
+    display: flex
+    justify-content: space-between
+    align-item: center
+    width: 860px
+    margin: 0
+    padding: 0
+  // .navbar__link
+  &__link
+    font-family: "Metropolis-Regular"
+    font-size: 400
+    font-size: 14px
+    line-height: 14px
+    a
+      text-decoration: none
+      color: $dark
+      transition: all ease 300ms
+      &:hover
+        color: $accent
+        transition: all ease 300ms
+    &_dark-theme a
+      color: $light
+  // .navbar__interact-block
+  &__interact-block
+    display: flex
+    align-items: center
+  // .navbar__switch-button
+  &__switch-button
+    display: inline-block
+    width: 50px /* ширина */
+    height: 27px /* высота */
+    border-radius: 31px /* радиус скругления */
+    background: $grey /* цвет фона */
+    z-index: 0
+    margin: 0
+    padding: 0
+    border: none
+    cursor: pointer
+    position: relative
+    transition: all ease 300ms
+    &::after
+      display: flex
+      justify-content: center
+      align-items: center
+      content: url("../img/icons/sun-icon.svg")
+      height: 25px /* высота кнопки */
+      width: 25px /* ширина кнопки */
+      border-radius: 50%
+      background: $switch-btn-dark /* цвет кнопки */
+      top: 1px /* положение кнопки по вертикали относительно основы */
+      right: 1px /* положение кнопки по горизонтали относительно основы */
+      transition: all ease 300ms /* анимация */
+      position: absolute
+      z-index: 1
+  // .navbar__login-button
+  &__login-button
+    margin-left: 70px
+    margin-right: 27px
+    font-family: 'Metropolis-Regular'
+    font-weight: 400
+    font-size: 14px
+    line-height: 14px
+    background: none
+    color: $dark
+    transition: all ease 300ms
+    &:hover
+      color: $accent
+      transition: all ease 300ms
+    &_dark-theme
+      color: $light
+  // .navbar__sign-in-button
+  &__sign-in-button
+    font-family: 'Metropolis-SemiBold'
+    font-weight: 600
+    font-size: 14px
+    line-height: 14px
+    text-transform: uppercase
+    color: $dark
+    padding: 14px 22px
+    background: $accent
+    border-radius: 3px
+    transition: all ease 300ms
+    &:hover
+      background: $accent-blue
+      color: $light
+      transition: all ease 300ms
+
+.switch-on
+  transition: all ease 300ms
+  &::after
+    content: url("../img/icons/moon-icon.svg")
+    left: 1px /* положение кнопки по горизонтали относительно основы */
+    transition: all ease 300ms /* анимация */
+
+
+
+
+@media (max-width: 1399.98px)
+  .main
+    background: url('../img/main/bg.jpg') no-repeat center
+    height: 820px
+    position: relative
+    // .main__navbar
+    &__navbar
+      height: 70px
+      background-color: #fff
+      opacity: 0.95
+      &_dark-theme
+        background-color: $dark
+    // .main__logo-links-block
+    &__logo-links-block
+      position: absolute
+      left: 82px
+      bottom: 43px
+      width: 175px
+      display: flex
+      justify-content: space-between
+    // .main__logo-link-block
+    &__logo-link-block
+
+    // .main__logo-link
+    &__logo-link
+
+    // .main__logo-link-img
+    &__logo-link-img
+
+
+  .navbar
+    // .navbar__container
+    &__container
+      display: flex
+      align-items: center
+      justify-content: space-between
+    // .navbar__link-block
+    &__link-block
+      display: flex
+      justify-content: space-between
+      align-item: center
+      width: 860px
+      margin: 0
+      padding: 0
+    // .navbar__link
+    &__link
+      font-family: "Metropolis-Regular"
+      font-size: 400
+      font-size: 14px
+      line-height: 14px
+      a
+        text-decoration: none
+        color: $dark
+        transition: all ease 300ms
+        &:hover
+          color: $accent
+          transition: all ease 300ms
+      &_dark-theme a
+        color: $light
+    // .navbar__interact-block
+    &__interact-block
+      display: flex
+      align-items: center
+    // .navbar__switch-button
+    &__switch-button
+      display: inline-block
+      width: 50px /* ширина */
+      height: 27px /* высота */
+      border-radius: 31px /* радиус скругления */
+      background: $grey /* цвет фона */
+      z-index: 0
+      margin: 0
+      padding: 0
+      border: none
+      cursor: pointer
+      position: relative
+      transition: all ease 300ms
+      &::after
+        display: flex
+        justify-content: center
+        align-items: center
+        content: url("../img/icons/sun-icon.svg")
+        height: 25px /* высота кнопки */
+        width: 25px /* ширина кнопки */
+        border-radius: 50%
+        background: $switch-btn-dark /* цвет кнопки */
+        top: 1px /* положение кнопки по вертикали относительно основы */
+        right: 1px /* положение кнопки по горизонтали относительно основы */
+        transition: all ease 300ms /* анимация */
+        position: absolute
+        z-index: 1
+    // .navbar__login-button
+    &__login-button
+      margin-left: 70px
+      margin-right: 27px
+      font-family: 'Metropolis-Regular'
+      font-weight: 400
+      font-size: 14px
+      line-height: 14px
+      background: none
+      color: $dark
+      transition: all ease 300ms
+      &:hover
+        color: $accent
+        transition: all ease 300ms
+      &_dark-theme
+        color: $light
+    // .navbar__sign-in-button
+    &__sign-in-button
+      font-family: 'Metropolis-SemiBold'
+      font-weight: 600
+      font-size: 14px
+      line-height: 14px
+      text-transform: uppercase
+      color: $dark
+      padding: 14px 22px
+      background: $accent
+      border-radius: 3px
+      transition: all ease 300ms
+      &:hover
+        background: $accent-blue
+        color: $light
+        transition: all ease 300ms
+
+  .switch-on
+    transition: all ease 300ms
+    &::after
+      content: url("../img/icons/moon-icon.svg")
+      left: 1px /* положение кнопки по горизонтали относительно основы */
+      transition: all ease 300ms /* анимация */

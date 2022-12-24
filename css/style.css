@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Metropolis-Regular";
+  src: url("../fonts/Metropolis/Metropolis-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url("../fonts/Metropolis/Metropolis-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis-SemiBold";
+  src: url("../fonts/Metropolis/Metropolis-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../fonts/Metropolis/Metropolis-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis-ExtraBold";
+  src: url("../fonts/Metropolis/Metropolis-ExtraBold.otf");
+  font-weight: 800;
+  font-style: normal;
+}
+.main {
+  background: url("../img/main/bg.jpg") no-repeat center;
+  height: 1080px;
+  position: relative;
+}
+.main__navbar {
+  height: 70px;
+  background-color: #fff;
+  opacity: 0.95;
+}
+.main__navbar_dark-theme {
+  background-color: #08080C;
+}
+.main__logo-links-block {
+  position: absolute;
+  left: 82px;
+  bottom: 43px;
+  width: 175px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__link-block {
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+  width: 860px;
+  margin: 0;
+  padding: 0;
+}
+.navbar__link {
+  font-family: "Metropolis-Regular";
+  font-size: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.navbar__link a {
+  text-decoration: none;
+  color: #08080C;
+  transition: all ease 300ms;
+}
+.navbar__link a:hover {
+  color: #1EE1B3;
+  transition: all ease 300ms;
+}
+.navbar__link_dark-theme a {
+  color: #fff;
+}
+.navbar__interact-block {
+  display: flex;
+  align-items: center;
+}
+.navbar__switch-button {
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  border-radius: 31px;
+  background: #CDCDCD;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 300ms;
+}
+.navbar__switch-button::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url("../img/icons/sun-icon.svg");
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #232427;
+  top: 1px;
+  right: 1px;
+  transition: all ease 300ms;
+  position: absolute;
+  z-index: 1;
+}
+.navbar__login-button {
+  margin-left: 70px;
+  margin-right: 27px;
+  font-family: "Metropolis-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  background: none;
+  color: #08080C;
+  transition: all ease 300ms;
+}
+.navbar__login-button:hover {
+  color: #1EE1B3;
+  transition: all ease 300ms;
+}
+.navbar__login-button_dark-theme {
+  color: #fff;
+}
+.navbar__sign-in-button {
+  font-family: "Metropolis-SemiBold";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #08080C;
+  padding: 14px 22px;
+  background: #1EE1B3;
+  border-radius: 3px;
+  transition: all ease 300ms;
+}
+.navbar__sign-in-button:hover {
+  background: #1EB2E1;
+  color: #fff;
+  transition: all ease 300ms;
+}
+
+.switch-on {
+  transition: all ease 300ms;
+}
+.switch-on::after {
+  content: url("../img/icons/moon-icon.svg");
+  left: 1px;
+  transition: all ease 300ms;
+}
+
+@media (max-width: 1399.98px) {
+  .main {
+    background: url("../img/main/bg.jpg") no-repeat center;
+    height: 820px;
+    position: relative;
+  }
+  .main__navbar {
+    height: 70px;
+    background-color: #fff;
+    opacity: 0.95;
+  }
+  .main__navbar_dark-theme {
+    background-color: #08080C;
+  }
+  .main__logo-links-block {
+    position: absolute;
+    left: 82px;
+    bottom: 43px;
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar__link-block {
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+    width: 860px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar__link {
+    font-family: "Metropolis-Regular";
+    font-size: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .navbar__link a {
+    text-decoration: none;
+    color: #08080C;
+    transition: all ease 300ms;
+  }
+  .navbar__link a:hover {
+    color: #1EE1B3;
+    transition: all ease 300ms;
+  }
+  .navbar__link_dark-theme a {
+    color: #fff;
+  }
+  .navbar__interact-block {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__switch-button {
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+    border-radius: 31px;
+    background: #CDCDCD;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all ease 300ms;
+  }
+  .navbar__switch-button::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url("../img/icons/sun-icon.svg");
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #232427;
+    top: 1px;
+    right: 1px;
+    transition: all ease 300ms;
+    position: absolute;
+    z-index: 1;
+  }
+  .navbar__login-button {
+    margin-left: 70px;
+    margin-right: 27px;
+    font-family: "Metropolis-Regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    background: none;
+    color: #08080C;
+    transition: all ease 300ms;
+  }
+  .navbar__login-button:hover {
+    color: #1EE1B3;
+    transition: all ease 300ms;
+  }
+  .navbar__login-button_dark-theme {
+    color: #fff;
+  }
+  .navbar__sign-in-button {
+    font-family: "Metropolis-SemiBold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #08080C;
+    padding: 14px 22px;
+    background: #1EE1B3;
+    border-radius: 3px;
+    transition: all ease 300ms;
+  }
+  .navbar__sign-in-button:hover {
+    background: #1EB2E1;
+    color: #fff;
+    transition: all ease 300ms;
+  }
+  .switch-on {
+    transition: all ease 300ms;
+  }
+  .switch-on::after {
+    content: url("../img/icons/moon-icon.svg");
+    left: 1px;
+    transition: all ease 300ms;
+  }
+}/*# sourceMappingURL=style.css.map */
