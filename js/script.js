@@ -6,7 +6,8 @@ const switchButton = document.querySelector(".navbar__switch-button"),
       navbarLoginButton = document.querySelector(".navbar__login-button"),
       navbarMenuBtn = document.querySelector(".navbar__menu-btn"),
       navbarLinkBlock = document.querySelector(".navbar__link-block"),
-      navbarContainer = document.querySelector(".navbar__container");
+      navbarContainer = document.querySelector(".navbar__container"),
+      partnerLogos = document.querySelector(".partner-logos");
 
 const switchTheme = (e) => {
   if (!switchButton.classList.contains('switch-on')){
@@ -15,7 +16,8 @@ const switchTheme = (e) => {
     navbarLink.forEach(element => element.classList.add("navbar__link_dark-theme"));
     navbarLoginButton.classList.add("navbar__login-button_dark-theme");
     navbarMenuBtn.classList.add("navbar__menu-btn_dark-theme");
-    navbarLinkBlock.classList.add("navbar__link-block_dark-theme");
+    navbarLinkBlock.classList.add("navbar__link-block_dark-theme"),
+    partnerLogos.classList.add("partner-logos_dark-theme");
 
   } else {
     switchButton.classList.remove('switch-on');
@@ -23,7 +25,8 @@ const switchTheme = (e) => {
     navbarLink.forEach(element => element.classList.remove("navbar__link_dark-theme"));
     navbarLoginButton.classList.remove("navbar__login-button_dark-theme");
     navbarMenuBtn.classList.remove("navbar__menu-btn_dark-theme");
-    navbarLinkBlock.classList.remove("navbar__link-block_dark-theme");
+    navbarLinkBlock.classList.remove("navbar__link-block_dark-theme"),
+    partnerLogos.classList.remove("partner-logos_dark-theme");
   }
 };
 

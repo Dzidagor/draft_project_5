@@ -1,0 +1,91 @@
+.partner-logos
+  padding-top: 80px
+  padding-bottom: 100px
+  background-color: $light
+  position: relative
+  display: flex
+  justify-content: center
+  &_dark-theme
+    background-color: $dark
+  // .partner-logos__bg-text
+  &__bg-text
+    font-family: 'Metropolis-Bold'
+    font-size: 250px
+    line-height: 250px
+    color: $bg-title
+    opacity: 0.1
+    text-transform: uppercase
+    position: absolute
+    top: -110px
+    left: 190px
+  // .partner-logos__logos-block
+  &__logos-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 1034px
+  // .partner-logos__logo
+  &__logo
+    opacity: 0.65
+
+@media (max-width: 991.98px)
+  .partner-logos
+    &__bg-text
+      font-size: 128px
+      line-height: 128px
+      top: -70px
+      left: 40px
+    // .partner-logos__logos-block
+    &__logos-block
+      width: 685px
+    &__logo-block
+      &:nth-child(1) img
+        width: 98px
+        height: 51px
+      &:nth-child(2) img
+        width: 78px
+        height: 41px
+      &:nth-child(3) img
+        width: 93px
+        height: 48px
+      &:nth-child(4) img
+        width: 51px
+        height: 27px
+      &:nth-child(5) img
+        width: 69px
+        height: 36px
+
+
+@media (max-width: 575.98px)
+  .partner-logos
+    padding-top: 25px
+    padding-bottom: 47px
+    // background-color: $light
+    // position: relative
+    // display: flex
+    // justify-content: center
+    &__bg-text
+      display: none
+      // font-size: 128px
+      // line-height: 128px
+      // top: -70px
+      // left: 40px
+    // .partner-logos__logos-block
+    &__logos-block
+      width: 330px
+    &__logo-block
+      &:nth-child(1) img
+        width: 47px
+        height: 25px
+      &:nth-child(2) img
+        width: 37px
+        height: 20px
+      &:nth-child(3) img
+        width: 45px
+        height: 23px
+      &:nth-child(4) img
+        width: 25px
+        height: 13px
+      &:nth-child(5) img
+        width: 33px
+        height: 17px
