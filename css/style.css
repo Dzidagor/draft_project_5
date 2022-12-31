@@ -28,6 +28,12 @@
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/Proxima Nova/ProximaNova-Regular.ttf") format("ttf"), url("../fonts/Proxima Nova/ProximaNova-Regular.woff") format("woff"), url("../fonts/Proxima Nova/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .main {
   background: url("../img/main/bg.jpg") no-repeat center;
   height: 1080px;
@@ -53,6 +59,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.navbar__menu-btn {
+  display: none;
 }
 .navbar__link-block {
   display: flex;
@@ -158,133 +167,196 @@
   transition: all ease 300ms;
 }
 
+.mc-block {
+  display: none;
+}
+
 @media (max-width: 1399.98px) {
   .main {
     background: url("../img/main/bg.jpg") no-repeat center;
-    height: 820px;
+  }
+  .main__logo-links-block {
+    left: 35px;
+    bottom: 32px;
+    width: 135px;
+  }
+  .navbar__link-block {
+    width: 700px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main {
+    background: url("../img/main/bg.jpg") no-repeat center;
+  }
+  .main__logo-links-block {
+    left: 35px;
+    bottom: 32px;
+    width: 135px;
+  }
+  .navbar__link-block {
+    width: 650px;
+  }
+  .navbar__login-button {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main {
+    background: url("../img/main/bg-tablet.jpg") no-repeat center;
+    height: 760px;
+  }
+  .main__navbar {
     position: relative;
+    height: 75px;
+  }
+  .main__logo-links-block {
+    left: 52px;
+    bottom: 32px;
+    width: 135px;
+  }
+  .main__logo-link-img {
+    height: 19px;
+    width: 19px;
+  }
+  .navbar__menu-btn {
+    display: inline-block;
+    font-family: "Metropolis-Regular";
+    font-size: 14px;
+    line-height: 14px;
+    color: #08080C;
+    transition: all ease 300ms;
+    cursor: pointer;
+  }
+  .navbar__menu-btn:hover {
+    color: #1EE1B3;
+    transition: all ease 300ms;
+  }
+  .navbar__menu-btn_dark-theme {
+    color: #fff;
+  }
+  .navbar__link-block {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-item: center;
+    width: 200px;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+  }
+  .navbar__link-block_dark-theme {
+    background-color: #08080C;
+  }
+  .navbar__link {
+    margin-bottom: 15px;
+  }
+  .opened {
+    display: flex;
+  }
+  .mc-block {
+    margin-top: 170px;
+    display: block;
+    text-align: right;
+  }
+  .mc-block__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .mc-block__subtitle {
+    font-family: "Metropolis-Bold";
+    font-size: 16px;
+    line-height: 16px;
+    color: #1EE1B3;
+    text-transform: uppercase;
+  }
+  .mc-block__title {
+    font-family: "Metropolis-Bold";
+    font-size: 150px;
+    line-height: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: -10px;
+    margin-bottom: 0;
+  }
+  .mc-block__line {
+    border: 1.5px solid #1EE1B3;
+    color: #1EE1B3;
+    border-radius: 3px;
+    width: 42px;
+    opacity: 1;
+    height: 0;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+  .mc-block__text {
+    font-family: "ProximaNova-Regular";
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    max-width: 440px;
+    text-align: right;
+  }
+}
+@media (max-width: 575.98px) {
+  .main {
+    background: url("../img/main/bg-phone.jpg") no-repeat center;
+    height: 812px;
   }
   .main__navbar {
     height: 70px;
-    background-color: #fff;
-    opacity: 0.95;
-  }
-  .main__navbar_dark-theme {
-    background-color: #08080C;
   }
   .main__logo-links-block {
     position: absolute;
-    left: 82px;
-    bottom: 43px;
-    width: 175px;
-    display: flex;
-    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 31px;
+    width: 231.32px;
   }
-  .navbar__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .main__logo-link-img {
+    height: 32.56px;
+    width: 32.56px;
   }
   .navbar__link-block {
-    display: flex;
-    justify-content: space-between;
-    align-item: center;
-    width: 860px;
-    margin: 0;
-    padding: 0;
-  }
-  .navbar__link {
-    font-family: "Metropolis-Regular";
-    font-size: 400;
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .navbar__link a {
-    text-decoration: none;
-    color: #08080C;
-    transition: all ease 300ms;
-  }
-  .navbar__link a:hover {
-    color: #1EE1B3;
-    transition: all ease 300ms;
-  }
-  .navbar__link_dark-theme a {
-    color: #fff;
-  }
-  .navbar__interact-block {
-    display: flex;
-    align-items: center;
+    top: 70px;
   }
   .navbar__switch-button {
     display: inline-block;
-    width: 50px;
-    height: 27px;
-    border-radius: 31px;
-    background: #CDCDCD;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    transition: all ease 300ms;
-  }
-  .navbar__switch-button::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: url("../img/icons/sun-icon.svg");
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background: #232427;
-    top: 1px;
-    right: 1px;
-    transition: all ease 300ms;
     position: absolute;
-    z-index: 1;
+    top: 90px;
+    right: -82%;
+    transform: rotate(-90deg);
+    position: relative;
   }
   .navbar__login-button {
-    margin-left: 70px;
-    margin-right: 27px;
-    font-family: "Metropolis-Regular";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    background: none;
-    color: #08080C;
-    transition: all ease 300ms;
+    margin-left: 0px;
+    margin-right: 17px;
   }
-  .navbar__login-button:hover {
-    color: #1EE1B3;
-    transition: all ease 300ms;
+  .mc-block {
+    margin-top: 240px;
   }
-  .navbar__login-button_dark-theme {
-    color: #fff;
+  .mc-block__subtitle {
+    font-size: 11px;
+    line-height: 11px;
   }
-  .navbar__sign-in-button {
-    font-family: "Metropolis-SemiBold";
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: #08080C;
-    padding: 14px 22px;
-    background: #1EE1B3;
-    border-radius: 3px;
-    transition: all ease 300ms;
+  .mc-block__title {
+    font-size: 102px;
+    line-height: 102px;
+    margin-right: -7px;
   }
-  .navbar__sign-in-button:hover {
-    background: #1EB2E1;
-    color: #fff;
-    transition: all ease 300ms;
+  .mc-block__line {
+    width: 29px;
+    margin-bottom: 8px;
   }
-  .switch-on {
-    transition: all ease 300ms;
-  }
-  .switch-on::after {
-    content: url("../img/icons/moon-icon.svg");
-    left: 1px;
-    transition: all ease 300ms;
+  .mc-block__text {
+    font-size: 8px;
+    line-height: 8px;
+    max-width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */

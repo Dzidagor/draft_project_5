@@ -33,6 +33,9 @@
     display: flex
     align-items: center
     justify-content: space-between
+  // .navbar__menu-btn
+  &__menu-btn
+    display: none
   // .navbar__link-block
   &__link-block
     display: flex
@@ -128,136 +131,195 @@
     left: 1px /* положение кнопки по горизонтали относительно основы */
     transition: all ease 300ms /* анимация */
 
-
+.mc-block
+  display: none
 
 
 @media (max-width: 1399.98px)
   .main
     background: url('../img/main/bg.jpg') no-repeat center
-    height: 820px
-    position: relative
-    // .main__navbar
-    &__navbar
-      height: 70px
-      background-color: #fff
-      opacity: 0.95
-      &_dark-theme
-        background-color: $dark
     // .main__logo-links-block
     &__logo-links-block
-      position: absolute
-      left: 82px
-      bottom: 43px
-      width: 175px
-      display: flex
-      justify-content: space-between
-    // .main__logo-link-block
-    &__logo-link-block
-
-    // .main__logo-link
-    &__logo-link
-
-    // .main__logo-link-img
-    &__logo-link-img
-
+      left: 35px
+      bottom: 32px
+      width: 135px
 
   .navbar
-    // .navbar__container
-    &__container
-      display: flex
-      align-items: center
-      justify-content: space-between
     // .navbar__link-block
     &__link-block
-      display: flex
-      justify-content: space-between
-      align-item: center
-      width: 860px
-      margin: 0
-      padding: 0
-    // .navbar__link
-    &__link
-      font-family: "Metropolis-Regular"
-      font-size: 400
-      font-size: 14px
-      line-height: 14px
-      a
-        text-decoration: none
-        color: $dark
-        transition: all ease 300ms
-        &:hover
-          color: $accent
-          transition: all ease 300ms
-      &_dark-theme a
-        color: $light
-    // .navbar__interact-block
-    &__interact-block
-      display: flex
-      align-items: center
-    // .navbar__switch-button
-    &__switch-button
-      display: inline-block
-      width: 50px /* ширина */
-      height: 27px /* высота */
-      border-radius: 31px /* радиус скругления */
-      background: $grey /* цвет фона */
-      z-index: 0
-      margin: 0
-      padding: 0
-      border: none
-      cursor: pointer
-      position: relative
-      transition: all ease 300ms
-      &::after
-        display: flex
-        justify-content: center
-        align-items: center
-        content: url("../img/icons/sun-icon.svg")
-        height: 25px /* высота кнопки */
-        width: 25px /* ширина кнопки */
-        border-radius: 50%
-        background: $switch-btn-dark /* цвет кнопки */
-        top: 1px /* положение кнопки по вертикали относительно основы */
-        right: 1px /* положение кнопки по горизонтали относительно основы */
-        transition: all ease 300ms /* анимация */
-        position: absolute
-        z-index: 1
-    // .navbar__login-button
+      width: 700px
+
+
+@media (max-width: 1199.98px)
+  .main
+    background: url('../img/main/bg.jpg') no-repeat center
+    // .main__logo-links-block
+    &__logo-links-block
+      left: 35px
+      bottom: 32px
+      width: 135px
+
+  .navbar
+    // .navbar__link-block
+    &__link-block
+      width: 650px
     &__login-button
-      margin-left: 70px
-      margin-right: 27px
+      margin-left: 40px
+
+
+@media (max-width: 991.98px)
+  .main
+    background: url('../img/main/bg-tablet.jpg') no-repeat center
+    height: 760px
+    // .main__navbar
+    &__navbar
+      position: relative
+      height: 75px
+    // .main__logo-links-block
+    &__logo-links-block
+      left: 52px
+      bottom: 32px
+      width: 135px
+    // .main__logo-link-img
+    &__logo-link-img
+      height: 19px
+      width: 19px
+
+  .navbar
+    // .navbar__menu-btn
+    &__menu-btn
+      display: inline-block
       font-family: 'Metropolis-Regular'
-      font-weight: 400
       font-size: 14px
       line-height: 14px
-      background: none
       color: $dark
       transition: all ease 300ms
+      cursor: pointer
       &:hover
         color: $accent
         transition: all ease 300ms
       &_dark-theme
         color: $light
-    // .navbar__sign-in-button
-    &__sign-in-button
-      font-family: 'Metropolis-SemiBold'
-      font-weight: 600
-      font-size: 14px
-      line-height: 14px
-      text-transform: uppercase
-      color: $dark
-      padding: 14px 22px
-      background: $accent
-      border-radius: 3px
-      transition: all ease 300ms
-      &:hover
-        background: $accent-blue
-        color: $light
-        transition: all ease 300ms
+    // .navbar__link-block
+    &__link-block
+      display: none
+      flex-direction: column
+      justify-content: space-between
+      align-item: center
+      width: 200px
+      margin: 0
+      padding-left: 15px
+      padding-top: 10px
+      position: absolute
+      top: 75px
+      left: 0px
+      background: $light
+      border-radius:  0 0 5px 5px
+      &_dark-theme
+        background-color: $dark
+    // .navbar__link
+    &__link
+      margin-bottom: 15px
+  .opened
+    display: flex
 
-  .switch-on
-    transition: all ease 300ms
-    &::after
-      content: url("../img/icons/moon-icon.svg")
-      left: 1px /* положение кнопки по горизонтали относительно основы */
-      transition: all ease 300ms /* анимация */
+  .mc-block
+    margin-top: 170px
+    display: block
+    text-align: right
+    // .mc-block__container
+    &__container
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+    // .mc-block__subtitle
+    &__subtitle
+      font-family: 'Metropolis-Bold'
+      font-size: 16px
+      line-height: 16px
+      color: $accent
+      text-transform: uppercase
+    // .mc-block__title
+    &__title
+      font-family: 'Metropolis-Bold'
+      font-size: 150px
+      line-height: 150px
+      color: $light
+      text-transform: uppercase
+      margin-right: -10px
+      margin-bottom: 0
+    // .mc-block__line
+    &__line
+      border: 1.5px solid $accent
+      color: $accent
+      border-radius: 3px
+      width: 42px
+      opacity: 1
+      height: 0
+      margin: 0
+      margin-bottom: 22px
+    // .mc-block__text
+    &__text
+      font-family: "ProximaNova-Regular"
+      font-size: 12px
+      line-height: 12px
+      color: $light
+      max-width: 440px
+      text-align: right
+
+@media (max-width: 575.98px)
+  .main
+    background: url('../img/main/bg-phone.jpg') no-repeat center
+    height: 812px
+    // .main__navbar
+    &__navbar
+      height: 70px
+    // .main__logo-links-block
+    &__logo-links-block
+      position: absolute
+      left: 50%
+      transform: translate(-50%, 0)
+      bottom: 31px
+      width: 231.32px
+    // .main__logo-link-img
+    &__logo-link-img
+      height: 32.56px
+      width: 32.56px
+
+  .navbar
+    // .navbar__link-block
+    &__link-block
+      top: 70px
+    // .navbar__switch-button
+    &__switch-button
+      display: inline-block
+      position: absolute
+      top: 90px
+      right: -82%
+      transform: rotate(-90deg)
+      position: relative
+    // .navbar__login-button
+    &__login-button
+      margin-left: 0px
+      margin-right: 17px
+
+  .mc-block
+    margin-top: 240px
+    &__subtitle
+      font-size: 11px
+      line-height: 11px
+    // .mc-block__title
+    &__title
+      font-size: 102px
+      line-height: 102px
+      margin-right: -7px
+    // .mc-block__line
+    &__line
+      width: 29px
+      margin-bottom: 8px
+    // .mc-block__text
+    &__text
+      font-size: 8px
+      line-height: 8px
+      max-width: 300px
