@@ -115,6 +115,8 @@
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  padding-top: 1px;
+  padding-left: 1px;
   background: #232427;
   top: 1px;
   right: 1px;
@@ -454,4 +456,102 @@
     width: 33px;
     height: 17px;
   }
+}
+.introducing_dark-theme {
+  background-color: #08080C;
+}
+.introducing__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introducing__title {
+  color: #08080C;
+  font-family: "Metropolis-Bold";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.introducing__title_dark-theme {
+  color: #1EE1B3;
+}
+.introducing__line {
+  border-radius: 3px;
+}
+.introducing__text {
+  margin-top: 64px;
+  font-family: "ProximaNova-Regular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  max-width: 732px;
+  color: #08080C;
+}
+.introducing__text_dark-theme {
+  color: #fff;
+}
+.introducing__button {
+  font-family: "Metropolis-Bold";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #D9D9D9;
+  background-color: #08080C;
+  padding: 18px 40px;
+  margin-top: 70px;
+  border-radius: 3px;
+  transition: all ease 500ms;
+}
+.introducing__button:hover {
+  color: #08080C;
+  background-color: #1EE1B3;
+}
+.introducing__button_dark-theme {
+  background-color: #fff;
+  color: #08080C;
+}
+.introducing__slider-block {
+  width: 425px;
+}
+.introducing__swiper-wrapper {
+  padding-top: 37px;
+}
+.introducing__swiper-button-prev {
+  left: 347px;
+  top: 59px;
+  width: 39px;
+  height: 39px;
+  background-color: #434343;
+  color: #D0CFCF;
+}
+.introducing__swiper-button-prev::after {
+  font-size: 16px !important;
+}
+.introducing__swiper-button-next {
+  right: 0;
+  top: 59px;
+  width: 39px;
+  height: 39px;
+  background-color: #434343;
+  color: #D0CFCF;
+}
+.introducing__swiper-button-next::after {
+  font-size: 16px !important;
+}
+.introducing__swiper-scrollbar {
+  top: 0px;
+  background-color: #fff !important;
+  height: 37px !important;
+  border-radius: 0 !important;
+}
+.introducing__swiper-scrollbar_dark-theme {
+  background-color: #08080C !important;
+}
+
+.swiper-scrollbar-drag {
+  border-radius: 0 !important;
+  background-color: #1EE1B3;
+  width: 128px !important;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */

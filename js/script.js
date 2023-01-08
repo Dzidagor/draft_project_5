@@ -1,5 +1,28 @@
 "use strict";
 
+// Слайдер
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
 const switchButton = document.querySelector(".navbar__switch-button"),
       navbar = document.querySelector(".navbar"),
       navbarLink = document.querySelectorAll(".navbar__link"),
@@ -7,7 +30,12 @@ const switchButton = document.querySelector(".navbar__switch-button"),
       navbarMenuBtn = document.querySelector(".navbar__menu-btn"),
       navbarLinkBlock = document.querySelector(".navbar__link-block"),
       navbarContainer = document.querySelector(".navbar__container"),
-      partnerLogos = document.querySelector(".partner-logos");
+      partnerLogos = document.querySelector(".partner-logos"),
+      introducing = document.querySelector(".introducing"),
+      introducingTitle = document.querySelector(".introducing__title"),
+      introducingText = document.querySelector(".introducing__text"),
+      introducingSwiperScrollbar = document.querySelector(".introducing__swiper-scrollbar"),
+      introducingButton = document.querySelector(".introducing__button");
 
 const switchTheme = (e) => {
   if (!switchButton.classList.contains('switch-on')){
@@ -17,7 +45,12 @@ const switchTheme = (e) => {
     navbarLoginButton.classList.add("navbar__login-button_dark-theme");
     navbarMenuBtn.classList.add("navbar__menu-btn_dark-theme");
     navbarLinkBlock.classList.add("navbar__link-block_dark-theme"),
-    partnerLogos.classList.add("partner-logos_dark-theme");
+    partnerLogos.classList.add("partner-logos_dark-theme"),
+    introducing.classList.add("introducing_dark-theme"),
+    introducingTitle.classList.add("introducing__title_dark-theme"),
+    introducingText.classList.add("introducing__text_dark-theme"),
+    introducingSwiperScrollbar.classList.add("introducing__swiper-scrollbar_dark-theme"),
+    introducingButton.classList.add("introducing__button_dark-theme");
 
   } else {
     switchButton.classList.remove('switch-on');
@@ -26,7 +59,12 @@ const switchTheme = (e) => {
     navbarLoginButton.classList.remove("navbar__login-button_dark-theme");
     navbarMenuBtn.classList.remove("navbar__menu-btn_dark-theme");
     navbarLinkBlock.classList.remove("navbar__link-block_dark-theme"),
-    partnerLogos.classList.remove("partner-logos_dark-theme");
+    partnerLogos.classList.remove("partner-logos_dark-theme"),
+    introducing.classList.remove("introducing_dark-theme"),
+    introducingTitle.classList.remove("introducing__title_dark-theme"),
+    introducingText.classList.remove("introducing__text_dark-theme"),
+    introducingSwiperScrollbar.classList.remove("introducing__swiper-scrollbar_dark-theme"),
+    introducingButton.classList.remove("introducing__button_dark-theme");
   }
 };
 

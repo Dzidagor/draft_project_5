@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Обнуляющий файл -->
   <link rel="stylesheet" href="css/reset.css">
+  <!-- Файл стиля -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,8 +83,50 @@
       </div>
     </div>
   </section>
+  <section class="introducing">
+    <div class="container introducing__container">
+      <div class="introducing__text-block">
+        <h2 class="introducing__title">introducing</h2>
+        <img src="img/introducing/line.png" alt="" class="introducing__line">
+        <p class="introducing__text">The newly designed BEGIN will completely alter the reality of fashion, individually and commercially as we know it. A major attribute of this mirror is to provide the user with the resources of complex fashion and style that many find difficult to obtain. Its main focus will be the user’s stylistic preferences and will then provide the user with an outfit which meets their own style while simultaneously using expert knowledge to ensure an outfit of pride. <br><br>Because self-presentation is such a prominent element of judgement, all kinds of people are vehemently dressing in all kinds of ways to fit certain descriptions, norms, and anything that will allow their confidence to break through the cracks of self-doubt.</p>
+        <button class="introducing__button">learn more</button>
+      </div>
+      <!-- /.introducing__text-block -->
+      <div class="introducing__slider-block">
+        <div class="swiper introducing__slider">
+          <div class="swiper-wrapper introducing__swiper-wrapper">
+            <div class="swiper-slide introducing__swiper-slide">
+              <div class="introducing__img-block">
+                <img src="img/introducing/slide-1.jpg" alt="" class="introducing__img">
+              </div>
+            </div>
+            <div class="swiper-slide introducing__swiper-slide">
+              <div class="introducing__img-block">
+                <img src="img/introducing/slide-2.jpg" alt="" class="introducing__img">
+              </div>
+            </div>
+            <div class="swiper-slide introducing__swiper-slide">
+              <div class="introducing__img-block">
+                <img src="img/introducing/slide-3.jpg" alt="" class="introducing__img">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev introducing__swiper-button-prev"></div>
+          <div class="swiper-button-next introducing__swiper-button-next"></div>
+          <div class="swiper-scrollbar introducing__swiper-scrollbar"></div>
+        </div>
+      </div>
+      <!-- /.introducing__slider-block -->
+    </div>
+    <!-- /.container introducing__container -->
+  </section>
+  <!-- /.introducing -->
+  <!-- Swiper Slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- Подключение скриптов -->
   <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

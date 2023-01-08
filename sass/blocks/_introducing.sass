@@ -1,0 +1,112 @@
+.introducing
+  // .introducing_dark-theme
+  &_dark-theme
+    background-color: $dark
+
+  // .introducing__container
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  // .introducing__text-block
+  &__text-block
+
+  // .introducing__title
+  &__title
+    color: $dark
+    font-family: "Metropolis-Bold"
+    font-weight: 700
+    font-size: 32px
+    line-height: 32px
+    text-transform: capitalize
+    // .introducing__title_dark-theme
+    &_dark-theme
+      color: $accent
+  // .introducing__line
+  &__line
+    border-radius: 3px
+  // .introducing__text
+  &__text
+    margin-top: 64px
+    font-family: 'ProximaNova-Regular'
+    font-weight: 400
+    font-size: 15px
+    line-height: 19px
+    max-width: 732px
+    color: $dark
+    // .introducing__text_dark-theme
+    &_dark-theme
+      color: $light
+  // .introducing__button
+  &__button
+    font-family: 'Metropolis-Bold'
+    font-size: 14px
+    line-height: 14px
+    text-transform: uppercase
+    color: $introducing-button-text
+    background-color: $dark
+    padding: 18px 40px
+    margin-top: 70px
+    border-radius: 3px
+    transition: all ease 500ms
+    &:hover
+      color: $dark
+      background-color: $accent
+    &_dark-theme
+      background-color: $light
+      color: $dark
+  // .introducing__slider-block
+  &__slider-block
+    width: 425px
+  // .introducing__slider
+  &__slider
+
+  // .introducing__swiper-wrapper
+  &__swiper-wrapper
+    padding-top: 37px
+  // .introducing__swiper-slide
+  &__swiper-slide
+
+  // .introducing__img-block
+  &__img-block
+
+  // .introducing__img
+  &__img
+
+  // .introducing__swiper-button-prev
+  &__swiper-button-prev
+    left: 347px
+    top: 59px
+    width: 39px
+    height: 39px
+    background-color: $slider-button-bg
+    color: $slider-button-icon
+    &::after
+      font-size: 16px !important
+  // .introducing__swiper-button-next
+  &__swiper-button-next
+    right: 0
+    top: 59px
+    width: 39px
+    height: 39px
+    background-color: $slider-button-bg
+    color: $slider-button-icon
+    &::after
+      font-size: 16px !important
+
+  // .introducing__swiper-scrollbar
+  &__swiper-scrollbar
+    top: 0px
+    background-color: $light !important
+    height: 37px !important
+    border-radius: 0 !important
+    // .introducing__swiper-scrollbar_dark-theme
+    &_dark-theme
+      background-color: $dark !important
+
+
+.swiper-scrollbar-drag
+  border-radius: 0 !important
+  background-color: $accent
+  width: 128px !important
+  margin-left: 5px
