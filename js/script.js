@@ -35,7 +35,12 @@ const switchButton = document.querySelector(".navbar__switch-button"),
       introducingTitle = document.querySelector(".introducing__title"),
       introducingText = document.querySelector(".introducing__text"),
       introducingSwiperScrollbar = document.querySelector(".introducing__swiper-scrollbar"),
-      introducingButton = document.querySelector(".introducing__button");
+      introducingButton = document.querySelector(".introducing__button"),
+      introducing2 = document.querySelector(".introducing-2"),
+      introducing2Title = document.querySelector(".introducing-2__title"),
+      platesBlockIconBlock = document.querySelectorAll(".plates-block__icon-block"),
+      platesBlockTitle = document.querySelectorAll(".plates-block__title"),
+      platesBlockSubtitle = document.querySelectorAll(".plates-block__subtitle");
 
 const switchTheme = (e) => {
   if (!switchButton.classList.contains('switch-on')){
@@ -50,7 +55,12 @@ const switchTheme = (e) => {
     introducingTitle.classList.add("introducing__title_dark-theme"),
     introducingText.classList.add("introducing__text_dark-theme"),
     introducingSwiperScrollbar.classList.add("introducing__swiper-scrollbar_dark-theme"),
-    introducingButton.classList.add("introducing__button_dark-theme");
+    introducingButton.classList.add("introducing__button_dark-theme"),
+    introducing2.classList.add("introducing-2_dark-theme"),
+    introducing2Title.classList.add("introducing-2__title_dark-theme"),
+    platesBlockIconBlock.forEach(element => element.classList.add("plates-block__icon-block_dark-theme")),
+    platesBlockTitle.forEach(element => element.classList.add("plates-block__title_dark-theme")),
+    platesBlockSubtitle.forEach(element => element.classList.add("plates-block__subtitle_dark-theme"));
 
   } else {
     switchButton.classList.remove('switch-on');
@@ -64,7 +74,12 @@ const switchTheme = (e) => {
     introducingTitle.classList.remove("introducing__title_dark-theme"),
     introducingText.classList.remove("introducing__text_dark-theme"),
     introducingSwiperScrollbar.classList.remove("introducing__swiper-scrollbar_dark-theme"),
-    introducingButton.classList.remove("introducing__button_dark-theme");
+    introducingButton.classList.remove("introducing__button_dark-theme"),
+    introducing2.classList.remove("introducing-2_dark-theme"),
+    introducing2Title.classList.remove("introducing-2__title_dark-theme"),
+    platesBlockIconBlock.forEach(element => element.classList.remove("plates-block__icon-block_dark-theme")),
+    platesBlockTitle.forEach(element => element.classList.remove("plates-block__title_dark-theme")),
+    platesBlockSubtitle.forEach(element => element.classList.remove("plates-block__subtitle_dark-theme"));
   }
 };
 
