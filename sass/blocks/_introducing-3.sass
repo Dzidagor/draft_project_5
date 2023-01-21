@@ -1,0 +1,82 @@
+.introducing-3
+  background-color: $dark-brown
+  &_dark-theme
+    background-color: $introducing-3-bg-dark
+  // .introducing-3__container
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 120px
+    padding-bottom: 110px
+  // .introducing-3__title
+  &__title
+    font-family: 'Metropolis-SemiBold'
+    font-size: 40px
+    line-height: 40px
+    text-align: center
+    color: $light
+    display: inline-block
+    margin-bottom: 30px
+  // .introducing-3__line
+  &__line
+    margin: 0
+    width: 85px
+    height: 3px
+    background-color: $accent
+    border: 2px solid $accent
+    opacity: 1
+    border-radius: 3px
+    margin-bottom: 50px
+  // .introducing-3__play-button-block
+  &__play-button-block
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 75px
+    height: 75px
+    border: 2px solid $light
+    cursor: pointer
+    transition: all ease 300ms
+    &:hover
+      border: 2px solid $accent
+      .introducing-3__play-button
+        fill: $accent
+        width: 23px
+        height: 31px
+  // .introducing-3__play-button
+  &__play-button
+    transition: all ease 300ms
+    width: 15px
+    height: 19px
+    fill: $light
+
+
+@media (max-width: 1199.98px)
+  .introducing-3
+    // .introducing-3__container
+    &__container
+      padding-top: 83px
+      padding-bottom: 92px
+    // .introducing-3__title
+    &__title
+      font-size: 30px
+      line-height: 30px
+      margin-bottom: 20px
+    // .introducing-3__line
+    &__line
+      margin-bottom: 66px
+
+
+@media (max-width: 575.98px)
+  .introducing-3
+    // .introducing-3__container
+    &__container
+      padding-top: 72px
+      padding-bottom: 69px
+    // .introducing-3__title
+    &__title
+      font-size: 20px
+      line-height: 20px
+    &__line
+      margin-bottom: 50px

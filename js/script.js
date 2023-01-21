@@ -40,7 +40,8 @@ const switchButton = document.querySelector(".navbar__switch-button"),
       introducing2Title = document.querySelector(".introducing-2__title"),
       platesBlockIconBlock = document.querySelectorAll(".plates-block__icon-block"),
       platesBlockTitle = document.querySelectorAll(".plates-block__title"),
-      platesBlockSubtitle = document.querySelectorAll(".plates-block__subtitle");
+      platesBlockSubtitle = document.querySelectorAll(".plates-block__subtitle"),
+      introducing3 = document.querySelector(".introducing-3");
 
 const switchTheme = (e) => {
   if (!switchButton.classList.contains('switch-on')){
@@ -60,7 +61,8 @@ const switchTheme = (e) => {
     introducing2Title.classList.add("introducing-2__title_dark-theme"),
     platesBlockIconBlock.forEach(element => element.classList.add("plates-block__icon-block_dark-theme")),
     platesBlockTitle.forEach(element => element.classList.add("plates-block__title_dark-theme")),
-    platesBlockSubtitle.forEach(element => element.classList.add("plates-block__subtitle_dark-theme"));
+    platesBlockSubtitle.forEach(element => element.classList.add("plates-block__subtitle_dark-theme")),
+    introducing3.classList.add("introducing-3_dark-theme");
 
   } else {
     switchButton.classList.remove('switch-on');
@@ -79,7 +81,8 @@ const switchTheme = (e) => {
     introducing2Title.classList.remove("introducing-2__title_dark-theme"),
     platesBlockIconBlock.forEach(element => element.classList.remove("plates-block__icon-block_dark-theme")),
     platesBlockTitle.forEach(element => element.classList.remove("plates-block__title_dark-theme")),
-    platesBlockSubtitle.forEach(element => element.classList.remove("plates-block__subtitle_dark-theme"));
+    platesBlockSubtitle.forEach(element => element.classList.remove("plates-block__subtitle_dark-theme")),
+    introducing3.classList.remove("introducing-3_dark-theme");
   }
 };
 

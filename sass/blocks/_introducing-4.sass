@@ -1,0 +1,82 @@
+.introducing-4
+  background-color: $introducing-4-bg
+  // .introducing-4__container
+  &__container
+    padding-top: 140px
+    display: flex
+    flex-direction: column
+    align-items: center
+  // .introducing-4__title
+  &__title
+    font-family: 'Metropolis-SemiBold'
+    font-size: 32px
+    line-height: 32px
+    color: $light
+    text-align: center
+  // .introducing-4__line
+  &__line
+    margin: 0
+    padding: 0
+    width: 43px
+    border: 2px solid $accent
+    background-color: $accent
+    border-radius: 3px
+    opacity: 1
+    margin-top: 15px
+    margin-bottom: 50px
+    
+  // .introducing-4__plates-block
+  &__plates-block
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 70px
+
+  // .introducing-4__plate-block
+  &__plate-block
+    max-width: 310px
+    background-color: $introducing-3-bg-dark
+    padding: 30px
+    color: $light
+    &:hover
+      .plate-block-2__title::after
+        transform: translateX(30px)
+
+  // .introducing-4__button
+  &__button
+    text-transform: uppercase
+    color: $light
+    background-color: $dark
+    font-family: 'Metropolis-Bold'
+    font-size: 14px
+    line-height: 14px
+    padding: 18px 40px
+    transition: all ease 300ms
+    border-radius: 3px
+    &:hover
+      background-color: $accent
+      color: $light
+
+.plate-block-2
+  // .plate-block-2__title
+  &__title
+    font-family: 'Metropolis-ExtraBold'
+    font-size: 20px
+    line-height: 20px
+    margin-bottom: 24px
+    &::after
+      transition: all ease 400ms
+      position: absolute
+      content: url("../img/introducing-4/arrow-right.svg")
+      transform: translateX(16px)
+      fill: $accent
+  // .plate-block__text
+  &__text
+    font-family: 'ProximaNova-Regular'
+    font-size: 15px
+    line-height: 19px
+    
+
+
+
+
